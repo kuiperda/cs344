@@ -1,0 +1,15 @@
+Daniel Kuiper CS344 lab_1 answers
+
+b
+ i  : The GPS is implemented as a function
+ ii : all of these objects are strings or lists of strings
+ iii: Yes, it is recursive: 'GPS' calls 'achieve_all' calls 'achieve' calls 'apply_operator' calls 'achieve_all' again
+
+d
+ i  : Monkey and Banana problem: Monkey wants to get bananas but has to perform a certain sequence of actions 
+	in the correct order to be able to get them. The code does implement these actions faithfully.
+ ii : The GPS seems to rely on the input from monkeys.py to know what actions it is able to take, but it finds a logical
+	path from the initial state to the desired end state based on its available options. More particularly, it
+	works backwards from the end state via the precondition actions.
+ iii: The code is artificially intelligent, it acts in a rational manner (maybe not so much a human manner)
+ iv : Yes, that monkey would be showing intelligence
