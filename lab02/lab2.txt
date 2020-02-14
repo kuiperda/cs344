@@ -1,0 +1,25 @@
+Daniel Kuiper Lab02 answers
+
+2.1 
+a: both algorithms solve the problem and get the same answer
+b: hill climbing is faster (not noticeably faster for this problem though)
+c: the starting value won't make a difference for this problem because there is only 1 local maximum
+d: the delta changes the initial location but that makes no difference here (see c.)
+e: exp_schedule is used to simulate the 'cooling' which slows it down over time
+
+2.2
+a: hill climbing is worse than annealing here because it gets stuck in the local max it started in
+b: yes, for hill climbing the starting value matters (again it wil get stuck in the local max it started in)
+c: a big delta makes the algorithms choose a value <> 30 so yes, it seems so
+d: (0, 0) and (3, 30) are the min/max values. hill climbing does worse (gets 20, 18) and 
+    simulated annealing does better with (27, 25.8)
+
+2.3
+a: hill climbing does very well within its starting local max and annealing seems to go larger than the data goes
+b: avg values are both very near the initial value
+c: annealing seems to do better because it gets higher, but it goes beyond the graph itself
+
+2.4
+a: beam search makes more sense in simulated annealing
+b: not more than 1000
+c: beam search would cut out non-optimal values rather than continuing randomly
