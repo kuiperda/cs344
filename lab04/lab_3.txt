@@ -1,0 +1,17 @@
+Exercise 4.3
+ a:
+  i. P(User) is given by the % of Americans that use drugs; 0.089
+  ii. P(test|user) is given by the sensitivity; 0.99
+  iii. P(-test|user) = 1 - answer from ii. so 0.01
+  iv. P(test|-user) is given by the specificity; 1 - 0.98 = .02
+  v. P(user|test) = P(user AND test) / P(test) OR
+        use Bayes' rule:
+            P(user|test) = P(test|user) * P(user) / P(test)
+            = (0.99 * 0.089) / P(test)
+            what is P(test)? (just normalize)
+            (.08811) / (.99 + .089) = 0.082
+
+
+            normalize:
+            @<P(test|user) * P(user), P(-test|user) * P(user)>
+            add the 2 results and then divide each by that result.
