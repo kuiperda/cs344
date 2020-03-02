@@ -1,0 +1,31 @@
+Daniel Kuiper lab03
+
+3.1
+    a. For the 'easy' problem:
+        DFS seems to take a while (didn't finish after 50 seconds)
+        AC3 is very fast
+        Backtracking took around 30 seconds
+        min_conflicts failed after a long while
+
+    b
+        mrv seems to make it take longer while forward checking speeds it up considerably.
+        Having both of them together makes it even faster, solving the 'hard' immediately.
+
+
+
+3.2
+    a. DFS can't handle very large n, AC seems to fail no matter what n I put in, backtracking is good for larger n, min_conflict is best for large n.
+
+    b. backtracking is best with both mrv and forward_checking (gets better than min_conflicts)
+
+    c. maximum of 100000 (defined in the code) but it will take one step per conflict it runs into.
+
+3.3
+    a Traditional problems represent a specific board position as a state and change that state via actions to move towards a goal state.
+        CSP instead looks at variable domains and chooses values that satisfy constraints.
+
+    b the heuristics for traditional search evaluate the value of a certain action whereas the heuristics in CSP evaluate how many
+        constraints are satisfied in a final (full board) state
+
+
+
