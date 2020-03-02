@@ -9,9 +9,27 @@ Exercise 4.3
             P(user|test) = P(test|user) * P(user) / P(test)
             = (0.99 * 0.089) / P(test)
             what is P(test)? (just normalize)
-            (.08811) / (.99 + .089) = 0.082
+            @<P(test|user)*P(user), P(-test|user) * P(user)>
+            @<(.99 * .089), (.01 * .089)
+            @<(.08811), (.00089)
+            <().08811 / .089), (.00089 / .089)> gives .99
 
 
-            normalize:
-            @<P(test|user) * P(user), P(-test|user) * P(user)>
-            add the 2 results and then divide each by that result.
+b:
+P(cancer) = .01 (1% of women at age forty who participate in routine screening have breast cancer.)
+P(pos|cancer) = .8 (80% of women with breast cancer will get positive mammographies. )
+P(pos|-cancer) = .096 (9.6% of women without breast cancer will also get positive mammographies.)
+
+P(cancer|pos) = ? (A woman in this age group is found to have a positive mammography in a routine screening. What are the chances that she has/doesn't have cancer?)
+
+-
+P(cancer|pos) = P(pos|cancer) * P(cancer) / P(pos)
+              = (.8 * .01) / P(pos)
+              
+              or, @<(.8 * .01), (.2 * .01)>
+              = <(.008), (.002)> / (.008 + .002 = .01)
+              = .8 / .2 (for not)
+
+              80% chance of having cancer. This is incorrect, I have messed up somewhere (in the last problem, too)
+
+
